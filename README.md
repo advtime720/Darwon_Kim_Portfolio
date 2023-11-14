@@ -8,8 +8,9 @@
   <br>
 </h2>
 
-## Features
-
+## Ultrasonic Parking Sensor
+This was my first project at UIUC during freshman year. My partner and I wanted to create a parking sensor that lights up two LEDs based on the distance 
+								from an obstruction. We decided to use the HC-SR04 ultrasonic sensor
 ⚡️ Modern UI Design + Reveal Animations\
 ⚡️ Made with React\
 ⚡️ Fully Responsive\
@@ -88,63 +89,28 @@ All customizable files are inside the `public/` folder, organised mainly into `p
 - `public/images` contains all the image assets that can be customized on website
 - `public/profile` contains all text and info inside json files that can be customized according to need
 
-### (1) NavBar
+### Ultrasonic Parking Sensor
+![project1_2](https://github.com/advtime720/Project-Portfolio/assets/150773404/d30a2e12-6f51-4756-8326-cfe4b1668fb1)
 
-- Open `public/profile/navbar.json` 
-It has 2 keys, *logo* and *sections*.
+| Components Used |
+| ----------- | 
+|HC-SR04 Ultrasonic Sensor|
+|L7805CV Voltage Regulator|
+|CD40106BE Schmitt Trigger|
+|LM358N Operational Amplifier|
+|LTL-4223 [Red LED], WP5603QBDL/SD/G [Blue LED]|
+|Function Generator|
+|Four 1N4148 Diodes|
+|1 mF Capacitor|
+|1k, 100 ohm resistors|
 
-```
-{
-    "logo" : {
-        "source": "images/logo.png",
-        "height" : 45,
-        "width" : 50
-    },
-    "sections": [
-        {
-            "title": "Home",
-            "href": "/"
-        },
-        {
-            "title": "About",
-            "href": "/about"
-        },
-        {
-            "title": "Skills",
-            "href": "/skills"
-        },
-        {
-            "title": "Education",
-            "href": "/education"
-        },
-        {
-            "title": "Experience",
-            "href": "/experience"
-        },
-        {
-            "title": "Projects",
-            "href": "/projects"
-        },
-        {
-            "title": "Resume",
-            "href": "https://drive.google.com/file/d/13kaPsdMNDsM4LV9g7m5-E5PTildp-yYf/view?usp=sharing",
-            "type": "link"
-        }
-    ]
-}
-```
-
-| key | Description |
-| ----------- | ----------- |
-| logo | image you want to show as brand image on NavBar. It can be also be a simple logo with just your intitials|
-| logo.source | path to the logo image |
-| logo.height | height of logo |
-| logo.width | width of logo |
-| sections | array of sections that you want to show on Navbar as links | 
-| sections.title | title of the section | 
-| sections.href | link to that section. Same as *path* mentioned in `routes.json` | 
-| sections.type | Opens in a new tab if value is *link*. `optional` field | 
-
+At a higher level, the circuit can be organized into 4 parts: The input, DC voltage control, amplifier, and output. The input is the ultrasonic sensor which requires an input to the "Trigger" pin in order to let the device know when to probe its field of view with an ultrasonic signal. 
+								Since we wanted the sensor to be constantly active, he connected it to a signal generator, providing an input of 130Hz with 5 Volts peak-to-peak at high-Z mode. The circuit is powered by a single 9V battery, but the ultrasonic sensor has a maximum operational voltage of 5V. 
+								This is where we used the voltage regulator to bring down the voltage to 5V for the sensor. The 5V output of the regulator will be used to power the rest of the circuit such as the op-amp and schmitt trigger. <br>
+								The output of the ultrasonic sensor is a PWM signal, but we needed a DC signal for the output of the circuit. We paired a shcmitt trigger with a 1mF capacitor to convert the signal to a DC voltage, which on its own is too weak
+								to power the LEDs. So we connected it to a simple non-inverting amplifier circuit which consists of the op-amp and 2 resistors. We then hooked up the output of the op-amp to the LED and diode network. The anode of the blue LED was connected directly to the op-amp, 
+								while the red LED had four extra diodes connected in series to its anode to raise the turn-on voltage. 
+        
 ### (2) Routes
 - open `public/profile/routes.json`
 
