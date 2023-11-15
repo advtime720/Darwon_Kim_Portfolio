@@ -1,7 +1,13 @@
-# Project-Portfolio
+# Darwon Kim - Project Portfolio
 # Dev Portfolio  [![GitHub](https://img.shields.io/github/license/mayankagarwal09/dev-portfolio?color=blue)](https://github.com/mayankagarwal09/dev-portfolio/blob/master/LICENSE.md) ![visitors](https://visitor-badge.glitch.me/badge?page_id=mayankagarwal09.dev-portfolio&color=blue)
+## Getting Started 🚀
+⚡️ Modern UI Design + Reveal Animations\
+⚡️ Made with React\
+⚡️ Fully Responsive\
+⚡️ Easily Customizable\
+⚡️ Well organized documentation
 
-## A minimal portfolio template for Developers!
+## A Collection of Personal and Academic Projects 
 
 <h2 align="center">
   <img src="https://github.com/mayankagarwal09/dev-portfolio/blob/master/images/dev-portfolio.gif" alt="Dev Portfolio" />
@@ -9,87 +15,8 @@
 </h2>
 
 ## Ultrasonic Parking Sensor
-This was my first project at UIUC during freshman year. My partner and I wanted to create a parking sensor that lights up two LEDs based on the distance 
-								from an obstruction. We decided to use the HC-SR04 ultrasonic sensor
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ Made with React\
-⚡️ Fully Responsive\
-⚡️ Easily Customizable\
-⚡️ Well organized documentation
+This was my first project at UIUC during freshman year. My partner and I wanted to create a parking sensor that lights up two LEDs based on the distance from an obstruction. We decided to use the HC-SR04 ultrasonic sensor
 
-## Demo
-
-To view the demo: **[click here](https://dev-portfolio-mayankagarwal09.vercel.app)**
-
-## Why do you need a portfolio? ☝️
-
-- Professional way to showcase your work
-- Increases your visibility and online presence
-- better chance of getting work opportunity
-
----
-
-## Getting Started 🚀
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites 📋
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
-
-Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
-
-## Setup 🔧
-
-From your command line, first clone Dev Portfolio:
-
-```bash
-# Clone the repository
-$ git clone https://github.com/mayankagarwal09/dev-portfolio
-
-# Move into the repository
-$ cd dev-portfolio
-
-# Remove the current origin repository
-$ git remote remove origin
-```
-
-After that, you can install the dependencies either using NPM or Yarn.
-
-Using NPM: Simply run the below commands.
-
-```bash
-# Install dependencies
-$ npm install --force
-
-# Start the development server
-$ npm start
-```
-
-Using Yarn: Be aware of that you'll need to delete the `package-lock.json` file if exists before executing the below commands.
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start the development server
-$ yarn start
-```
-
-Once your server has started, go to this url `http://localhost:3000/` to see the portfolio locally.
-The page will reload if you make edits.
-
----
-
-## Customization Instructions:
-
-### Step 1 - DATA & IMAGES
-
-All customizable files are inside the `public/` folder, organised mainly into `public/images/` and `public/profile/`.
-- `public/images` contains all the image assets that can be customized on website
-- `public/profile` contains all text and info inside json files that can be customized according to need
-
-### Ultrasonic Parking Sensor
 ![project1_2](https://github.com/advtime720/Project-Portfolio/assets/150773404/d30a2e12-6f51-4756-8326-cfe4b1668fb1)
 
 | Components Used |
@@ -104,13 +31,21 @@ All customizable files are inside the `public/` folder, organised mainly into `p
 |1 mF Capacitor|
 |1k, 100 ohm resistors|
 
-At a higher level, the circuit can be organized into 4 parts: The input, DC voltage control, amplifier, and output. The input is the ultrasonic sensor which requires an input to the "Trigger" pin in order to let the device know when to probe its field of view with an ultrasonic signal. 
-								Since we wanted the sensor to be constantly active, he connected it to a signal generator, providing an input of 130Hz with 5 Volts peak-to-peak at high-Z mode. The circuit is powered by a single 9V battery, but the ultrasonic sensor has a maximum operational voltage of 5V. 
-								This is where we used the voltage regulator to bring down the voltage to 5V for the sensor. The 5V output of the regulator will be used to power the rest of the circuit such as the op-amp and schmitt trigger. <br>
-								The output of the ultrasonic sensor is a PWM signal, but we needed a DC signal for the output of the circuit. We paired a shcmitt trigger with a 1mF capacitor to convert the signal to a DC voltage, which on its own is too weak
-								to power the LEDs. So we connected it to a simple non-inverting amplifier circuit which consists of the op-amp and 2 resistors. We then hooked up the output of the op-amp to the LED and diode network. The anode of the blue LED was connected directly to the op-amp, 
-								while the red LED had four extra diodes connected in series to its anode to raise the turn-on voltage. 
-        
+At a higher level, the circuit can be organized into 4 parts: The input, DC voltage control, amplifier, and output. The input is the ultrasonic sensor which requires an input to the "Trigger" pin in order to let the device know when to probe its field of view with an ultrasonic signal. Since we wanted the sensor to be constantly active, he connected it to a signal generator, providing an input of 130Hz with 5 Volts peak-to-peak at high-Z mode. The circuit is powered by a single 9V battery, but the ultrasonic sensor has a maximum operational voltage of 5V. This is where we used the voltage regulator to bring down the voltage to 5V for the sensor. The 5V output of the regulator will be used to power the rest of the circuit such as the op-amp and schmitt trigger. The output of the ultrasonic sensor is a PWM signal, but we needed a DC signal for the output of the circuit. We paired a shcmitt trigger with a 1mF capacitor to convert the signal to a DC voltage, which on its own is too weak to power the LEDs. So we connected it to a simple non-inverting amplifier circuit which consists of the op-amp and 2 resistors. We then hooked up the output of the op-amp to the LED and diode network. The anode of the blue LED was connected directly to the op-amp, while the red LED had four extra diodes connected in series to its anode to raise the turn-on voltage. 
+
+
+To view the demo: **[click here](https://dev-portfolio-mayankagarwal09.vercel.app)**
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Step 1 - DATA & IMAGES
+
+All customizable files are inside the `public/` folder, organised mainly into `public/images/` and `public/profile/`.
+- `public/images` contains all the image assets that can be customized on website
+- `public/profile` contains all text and info inside json files that can be customized according to need
+
+
+
 ### (2) Routes
 - open `public/profile/routes.json`
 
