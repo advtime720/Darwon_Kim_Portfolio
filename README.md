@@ -14,10 +14,14 @@
   <br>
 </h2>
 
+
 ## Ultrasonic Parking Sensor
-This was my first project at UIUC during freshman year. My partner and I wanted to create a parking sensor that lights up two LEDs based on the distance from an obstruction. We decided to use the HC-SR04 ultrasonic sensor
+This was my first project at UIUC during freshman year. My partner and I created a parking sensor that lights up two LEDs based on the distance from an obstruction. We decided to use the HC-SR04 ultrasonic sensor.
 
 ![project1_2](https://github.com/advtime720/Project-Portfolio/assets/150773404/d30a2e12-6f51-4756-8326-cfe4b1668fb1)
+
+<img width="420" alt="Screenshot 2023-11-14 181413" src="https://github.com/advtime720/Project-Portfolio/assets/150773404/b0c071e6-8a0d-45c6-90f6-138c9912fd3d">
+<img width="368" alt="Screenshot 2023-11-14 181438" src="https://github.com/advtime720/Project-Portfolio/assets/150773404/ec3fc3cb-7dc6-44ac-92e3-d35ba2744522">
 
 | Components Used |
 | ----------- | 
@@ -32,7 +36,12 @@ This was my first project at UIUC during freshman year. My partner and I wanted 
 |1k, 100 ohm resistors|
 
 At a higher level, the circuit can be organized into 4 parts: The input, DC voltage control, amplifier, and output. The input is the ultrasonic sensor which requires an input to the "Trigger" pin in order to let the device know when to probe its field of view with an ultrasonic signal. Since we wanted the sensor to be constantly active, he connected it to a signal generator, providing an input of 130Hz with 5 Volts peak-to-peak at high-Z mode. The circuit is powered by a single 9V battery, but the ultrasonic sensor has a maximum operational voltage of 5V. This is where we used the voltage regulator to bring down the voltage to 5V for the sensor. The 5V output of the regulator will be used to power the rest of the circuit such as the op-amp and schmitt trigger. The output of the ultrasonic sensor is a PWM signal, but we needed a DC signal for the output of the circuit. We paired a shcmitt trigger with a 1mF capacitor to convert the signal to a DC voltage, which on its own is too weak to power the LEDs. So we connected it to a simple non-inverting amplifier circuit which consists of the op-amp and 2 resistors. We then hooked up the output of the op-amp to the LED and diode network. The anode of the blue LED was connected directly to the op-amp, while the red LED had four extra diodes connected in series to its anode to raise the turn-on voltage. 
-
+<br>
+<br>
+ =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+<br>
+<br>
+## Bit-Serial Logic Processor
 
 To view the demo: **[click here](https://dev-portfolio-mayankagarwal09.vercel.app)**
 
