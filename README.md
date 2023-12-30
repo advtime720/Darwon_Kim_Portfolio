@@ -28,9 +28,8 @@ At a higher level, the circuit can be organized into 4 parts: The input, DC volt
 <br>
 
  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
- 
 <br>
-<br>
+
 ## Bit-Serial Logic Processor
 
 For this project, my partner and I designed and implemented a bit-serial logic processor purely through hardware. 
@@ -42,7 +41,9 @@ This procesor can perform eight different, 4-bit bitwise operations. At a higher
 
 The Register Unit contains two 4-bit registers: register A and register B. The Routing Unit is used to choose which register will hold the final result. 
 
+![full_circuit](https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/ea5a9628-0fae-4193-9ab2-ede1d4b4a08c)
 <img width="383" alt="Screenshot 2023-12-30 113049" src="https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/0dd23c83-c0aa-4b85-a905-0a97a2cc38f3">
+<img width="189" alt="routing unit layout" src="https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/a19d7bef-e7e3-42da-9cbf-0d27b89671f0">
 
 
 
