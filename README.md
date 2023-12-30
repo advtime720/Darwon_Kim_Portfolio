@@ -1,18 +1,6 @@
 # Darwon Kim - Project Portfolio
-# Dev Portfolio  [![GitHub](https://img.shields.io/github/license/mayankagarwal09/dev-portfolio?color=blue)](https://github.com/mayankagarwal09/dev-portfolio/blob/master/LICENSE.md) ![visitors](https://visitor-badge.glitch.me/badge?page_id=mayankagarwal09.dev-portfolio&color=blue)
-## Getting Started 🚀
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ Made with React\
-⚡️ Fully Responsive\
-⚡️ Easily Customizable\
-⚡️ Well organized documentation
 
 ## A Collection of Personal and Academic Projects 
-
-<h2 align="center">
-  <img src="https://github.com/mayankagarwal09/dev-portfolio/blob/master/images/dev-portfolio.gif" alt="Dev Portfolio" />
-  <br>
-</h2>
 
 
 ## Ultrasonic Parking Sensor
@@ -38,57 +26,26 @@ This was my first project at UIUC during freshman year. My partner and I created
 At a higher level, the circuit can be organized into 4 parts: The input, DC voltage control, amplifier, and output. The input is the ultrasonic sensor which requires an input to the "Trigger" pin in order to let the device know when to probe its field of view with an ultrasonic signal. Since we wanted the sensor to be constantly active, he connected it to a signal generator, providing an input of 130Hz with 5 Volts peak-to-peak at high-Z mode. The circuit is powered by a single 9V battery, but the ultrasonic sensor has a maximum operational voltage of 5V. This is where we used the voltage regulator to bring down the voltage to 5V for the sensor. The 5V output of the regulator will be used to power the rest of the circuit such as the op-amp and schmitt trigger. The output of the ultrasonic sensor is a PWM signal, but we needed a DC signal for the output of the circuit. We paired a shcmitt trigger with a 1mF capacitor to convert the signal to a DC voltage, which on its own is too weak to power the LEDs. So we connected it to a simple non-inverting amplifier circuit which consists of the op-amp and 2 resistors. We then hooked up the output of the op-amp to the LED and diode network. The anode of the blue LED was connected directly to the op-amp, while the red LED had four extra diodes connected in series to its anode to raise the turn-on voltage. 
 <br>
 <br>
+
  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ 
 <br>
 <br>
 ## Bit-Serial Logic Processor
 
-To view the demo: **[click here](https://dev-portfolio-mayankagarwal09.vercel.app)**
+For this project, my partner and I designed and implemented a bit-serial logic processor purely through hardware. 
+This procesor can perform eight different, 4-bit bitwise operations. At a higher level, the processor consists of four main components:
+- Register Unit
+- Computation Unit
+- Routing Unit
+- Control Unit 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The Register Unit contains two 4-bit registers: register A and register B. The Routing Unit is used to choose which register will hold the final result. 
 
-### Step 1 - DATA & IMAGES
-
-All customizable files are inside the `public/` folder, organised mainly into `public/images/` and `public/profile/`.
-- `public/images` contains all the image assets that can be customized on website
-- `public/profile` contains all text and info inside json files that can be customized according to need
+<img width="383" alt="Screenshot 2023-12-30 113049" src="https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/0dd23c83-c0aa-4b85-a905-0a97a2cc38f3">
 
 
 
-### (2) Routes
-- open `public/profile/routes.json`
-
-```
-{
-    "sections": [
-        {
-            "component": "About",
-            "path": "/about",
-            "headerTitle": "About"
-        },
-        {
-            "component": "Skills",
-            "path": "/skills",
-            "headerTitle": "Skills"
-        },
-        {
-            "component": "Education",
-            "path": "/education",
-            "headerTitle": "Education"
-        },
-        {
-            "component": "Experience",
-            "path": "/experience",
-            "headerTitle": "Experience"
-        },
-        {
-            "component": "Projects",
-            "path": "/projects",
-            "headerTitle": "Projects"
-        }
-    ]
-}
-```
 
 | key | Description |
 | ----------- | ----------- |
@@ -166,6 +123,7 @@ All customizable files are inside the `public/` folder, organised mainly into `p
 ### (5) Skills Section
 
 - open `public/profile/skills.json`
+
 
 ```
 {
