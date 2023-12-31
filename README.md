@@ -1,9 +1,9 @@
 # Darwon Kim - Project Portfolio
 
-## A Collection of Personal and Academic Projects 
+#### Personal and Academic Projects 
 
 
-## Ultrasonic Parking Sensor
+## \<Ultrasonic Parking Sensor>
 This was my first project at UIUC during freshman year. My partner and I created a parking sensor that lights up two LEDs based on the distance from an obstruction. We decided to use the HC-SR04 ultrasonic sensor.
 
 ![project1_2](https://github.com/advtime720/Project-Portfolio/assets/150773404/d30a2e12-6f51-4756-8326-cfe4b1668fb1)
@@ -30,7 +30,7 @@ At a higher level, the circuit can be organized into 4 parts: The input, DC volt
  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 <br>
 
-## Bit-Serial Logic Processor
+## \<Bit-Serial Logic Processor>
 
 For this project, my partner and I designed and implemented a bit-serial logic processor purely through hardware. 
 This procesor can perform eight different, 4-bit bitwise operations. At a higher level, the processor consists of four main components:
@@ -56,6 +56,8 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 - For component customization, create a component of your own inside `src/components/` and use name of that component here.
 
 
+### LC-3 Calculator
+### 
 
 ### (4) About Section
 
