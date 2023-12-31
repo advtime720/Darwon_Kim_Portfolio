@@ -43,15 +43,25 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 
 ![full_circuit](https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/ea5a9628-0fae-4193-9ab2-ede1d4b4a08c)
 <img width="383" alt="Screenshot 2023-12-30 113049" src="https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/0dd23c83-c0aa-4b85-a905-0a97a2cc38f3">
+<img width="507" alt="Screenshot 2023-12-30 180249" src="https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/34851ab0-b7db-43ce-a0a0-5a3d0939eb2c">
 <img width="189" alt="routing unit layout" src="https://github.com/advtime720/Project-Portfolio-Structure-/assets/150773404/a19d7bef-e7e3-42da-9cbf-0d27b89671f0">
 
-
-| key | Description |
+| Manufacturer PN | Part Description |
 | ----------- | ----------- |
-| sections | array of sections that you want to create route for | 
-| sections.component | name of the Component. No need to change it unless you want to customize the entire Component. | 
-| sections.path | route for the particular section. this is the path where the particular section will be accessible | 
-| sections.headerTitle | title to be shown on the top of that section page | 
+| 	SN74HC153N | Dual 4x1 MUX | 
+| SN74HC86N | name of the Component. | 
+| 	CD74AC00E | routee | 
+| 	CD74AC02E | title to be shown on the top of that section page | 
+| 	CD74AC04E | routee | 
+| 	SN74HC161N | routee | 
+| 	SN74HC74N | routee | 
+| 	SN74HC27N | routee | 
+| 	CD74HC194E | routee | 
+| 	76SB08T | 8 position DIP switch | 
+| 	MV57164 | Multi-segment LED | 
+|	PTS645SL43-2 LFS | Push button |
+| 1k ohm resistor | asdf |
+| 330 ohm resistor | asdf |
 
 - For component customization, create a component of your own inside `src/components/` and use name of that component here.
 
