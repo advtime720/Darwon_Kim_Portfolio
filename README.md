@@ -69,7 +69,15 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 ### LC-3 Calculator
 ### 
 
-### (4) About Section
+
+```bash
+insert
+code
+here
+```
+
+
+### (4) Python Webscrape 
 
 ### (5) Skills Section
 
