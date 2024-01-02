@@ -64,22 +64,7 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 
 
 ### LC-3 Calculator
-### 
+https://github.com/advtime720/LC-3_Calculator
 
-
-```bash
-insert
-code
-here
-```
-
-
-### (4) Python Webscrape 
-
-### (5) Skills Section
-
-### (7) Experience Section
-
-### (8) Projects Section
-
-### (9) Resume Section
+### (4) Python Webscrape Project
+https://github.com/advtime720/Python_Webscraping_-Codable-
