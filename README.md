@@ -60,11 +60,16 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 | 1k ohm resistor | asdf |
 | 330 ohm resistor | asdf |
 
-- For component customization, create a component of your own inside `src/components/` and use name of that component here.
+
+## \<Python Webscraping Project>
+https://github.com/advtime720/Python_Webscraping_-Codable-
+
+I worked on this project while I was in the Project Team of the Codable RSO at UIUC. 
+Our team developed a web scraping program that notifies the user when a new car deal with user-specified parameters appear. The user can choose the car make, model, price range, and more. 
+This project was developed using the BeautifulSoup library to parse website html data in real-time. I specifically worked on cars_scrape.py and file_saver.py. 
 
 
-### LC-3 Calculator
+## \<LC-3 Calculator>
 https://github.com/advtime720/LC-3_Calculator
 
-### (4) Python Webscrape Project
-https://github.com/advtime720/Python_Webscraping_-Codable-
+
