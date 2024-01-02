@@ -24,7 +24,6 @@ This was my first project at UIUC during freshman year. My partner and I created
 |1k, 100 ohm resistors|
 
 <br>
-
  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 <br>
 
@@ -57,8 +56,8 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 | 	76SB08T | 8 position DIP switch | 
 | 	MV57164 | Multi-segment LED | 
 |	PTS645SL43-2 LFS | Push button |
-| 1k ohm resistor | asdf |
-| 330 ohm resistor | asdf |
+| 	CF14JT1K00 | 1k ohm resistor |
+| 	CF14JT330R | 330 ohm resistor |
 
 
 ## \<Python Webscraping Project>
