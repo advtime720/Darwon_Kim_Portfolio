@@ -46,8 +46,8 @@ The Register Unit contains two 4-bit registers: register A and register B. The R
 | ----------- | ----------- |
 | 	SN74HC153N | Dual 4x1 MUX | 
 | SN74HC86N | name of the Component. | 
-| 	CD74AC00E | routee | 
-| 	CD74AC02E | title to be shown on the top of that section page | 
+| 	CD74AC00E | Quad NAND | 
+| 	CD74AC02E | Quad NOR | 
 | 	CD74AC04E | routee | 
 | 	SN74HC161N | routee | 
 | 	SN74HC74N | routee | 
